@@ -39,7 +39,6 @@ def books(message):
 def vadacha(message):
     if message.text == 'Остров сокровищ. Р. Стивенсон':
         file=open(r'C:\Users\pupit\Documents\TgLibBot\Files\Остров сокровищ. Р. Стивенсон .fb2', 'rb')
-    #Добавить книги
                 
 #Отслежевание и обработка фото    
 @bot.message_handler(content_types=['photo'])
