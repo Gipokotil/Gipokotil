@@ -8,8 +8,6 @@ bot = telebot.TeleBot('5971640105:AAFQsjRcLZPdH6vRNyTWFUvkJICYX4APeME')
 def start(message):
     mess = f"Привет, {message.from_user.first_name} {message.from_user.last_name}! Добро пожаловать в TgLibBot - твоя библиотека цифровых книг! Ввдеите /books, чтобы начать искать книги или /info, чтобы узнать больше о боте."
     bot.send_message(message.chat.id,mess)
-#Отслежевание и обработка обычного текста
-
 
 #Отслеживание и обработка команды букс, она открывает меню с кнопками, где можно выбрать жанр книг
 @bot.message_handler(commands=['books'])
